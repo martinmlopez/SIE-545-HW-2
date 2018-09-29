@@ -146,10 +146,80 @@ Identify the extreme points and extreme directions of the following sets:\\
     \end{align*} 
 
 \subsection{Solution to 2.21}
+a.) \\
+\begin{equation*}
+    x_1 = -1 \pm \sqrt{5-x_3}
+\end{equation*}
+\begin{equation*}
+    x_2 = \frac{3-x_3 \pm \sqrt{5-x_3}}{2}
+\end{equation*}
+Where $x_3 \leq \frac{5}{2}$. 
+Now we need to set the direction:\\
+\begin{equation*}
+    \overline{x} = (0,0,0)
+\end{equation*}
+\begin{equation*}
+    d= (d_1,d_2,-1)
+\end{equation*}
+\begin{equation*}
+    \overline{x} + \lambda d \in S, \forall \lambda > 0
+\end{equation*}
+\begin{equation*}
+    d_1 + 2d_2 \leq 1 \\ 
+    4\lambda d_2 \geq \lambda^2 d_1^2
+\end{equation*}
+\begin{equation*}
+    4\lambda d_2 \geq \lambda^2 d_1^2
+\end{equation*}
+\begin{equation*}
+    d_1 = 0 ; d_2 \geq 0 \leftrightarrow d_1 = 0 , d_2 = \frac{1}{2}
+\end{equation*}
+The extreme points are:\\
+(0,0-1) and (0, 1/2, -1).\\
+
+b.) \\ \\
+We get extreme points (0,1,3/2) , (1,0,3/2), (0,1,0) and (1,0,0).//
+We get the following Directions $D = \{ (d_1, d_2, d_3)\}$//
+\begin{align*}
+    &d_1 + d_2 + 2d_3 < 0\\
+    &d_1 + d_2 = 0 \\
+    &d_1 + d_2 + d_3  = 1\\
+    &d \geq 0\\
+\end{align*}
+The Direction set is empty and thus it is $S$ is bounded since there are no extreme directions. \\ \\
+c.) \\ \\ 
+Extreme point is (0,0) from plotting $x_1^2 + x_2^2 = 2$\\ \\
+\partial S = (-\sqrt{2/5} , 2\sqrt{2/5}) and (\sqrt{2/5}, 2/5).\\ \\
+\text{Since $S$ is bounded it has no extreme directions.}\\
 
 \section{Problem 2.25}
 Show that $C=\{x: Ax \leq 0\}$, where $A$ is an $m x n$ matrix, has at most one extreme point, the origin.\\
 \subsection{Solution to 2.25}
+Utilizing Farakas Theorem we have the following: 
+\begin{enumerate}
+    \item $Ax \leq 0, c^T > 0 $
+    \item $A^T y = c, y \geq 0 $
+\end{enumerate}
+We will suppose that 2. is False \Rightarrow \text{1. is True.}\\ 
+$S = \{ z: z = Ay, \forall y \geq 0 \}$ which is a conic hull. 
+\rightarrow $c \notin S$, $\exists p, \alpha$ s.t. $p^t < \alpha$.
+We then take:\\
+\quad \quad \quad \quad $p^tz \leq \alpha \forall z \in S$\\
+\quad \quad \quad \quad $p^tAy \leq \alpha, \forall y \geq 0$\\
+\quad \quad \quad \quad $v^t \leq \alpha$\\
+\Rightarrow \alpha \leq 0\\
+\quad \quad \quad \quad $v^t = p^tA$\\
+\quad \quad \quad \quad \exists j $v_j > 0$\\
+\begin{equation*}
+    \sum_{i=1}^{m} v_i* y_i = v_j*y_j + \sum_{i=1, j \neq 0}^{m}v_i* y_i\\
+\end{equation*}
+\Leftrightarrow \\
+\begin{equation*}
+    \sum_{i=1}^{m} v_i* y_i = v_j*y_j + \sum_{i=1, j \neq 0}^{m}v_i* 0\\
+\end{equation*}
+$(p^tA)^t \leq 0$ \leftrightarrow $AP \leq 0$\\
+$c^tp > \alpha \geq 0$\\ \\
+Therefore $Ax \leq 0$ based on the Farkas theorem.
 
 \section{Problem 2.48}
 Let $A$ be a $p x n$ matrix and $B$ be a $q x n$ matrix. Show that if System 1 below has no solution, System 2 has a solution:\\
