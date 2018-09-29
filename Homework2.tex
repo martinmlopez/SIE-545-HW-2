@@ -105,10 +105,35 @@ Let $S$ be a convex set in $\mathbb{R}^n$, $A$ be an $m x n$ matrix, and $\alpha
             &b.) \quad \alpha S = \{ \alpha x: x \in {S} \}.\\
     \end{align*}
 \subsection{Solution to 2.7}
+    \begin{equation*}
+        H = \{ (x_1, x_2, x_3): (x_1 -1)^2 + x_2^2 + (x_3-2)^2 =0 \}\\
+    \end{equation*}
+    \text{We take then need to minimize the distance from the point} $y = [1,0,2]^t$. 
+    \text{We determine the minimizing point by the following objecive function:}\\
+    \begin{equation*}
+        min \text{ } d = (x_1-1)^2 + x_2^2 + (x_3 - 2)^2\\
+    \end{equation*}
+    \begin{align*}
+        &s.t.\\
+        &x_1^2 + x_2^2 + x_3^2 \leq 4\\
+        &x_1^2 -4x_2 \leq 0
+    \end{align*}
+
 
 \section{Problem 2.12}
 Let $S_1$ and $S_2$ be closed convex sets. Prove that $S_1$ \oplus $S_2$ is convex. Show by an example that $S_1$ \oplus $S_2$ is not necessarily closed. Prove that compactness of $S_1$ \oplus $S_2$ is a sufficient condition for $S_1$ \oplus $S_2$ to be closed.\\ 
 \subsection{Solution to 2.12}
+Let $S = S_1 + S_2$ and consider $x$ so that $y \in S$. We then define $\lambda \in (0,1)$ so that $x = x_1 + x_2$ and $y = y_1 + y_2$ thus $\{ x_1, y_1 \subseteq S_1$ and $x_2 , y_2 \subseteq S_2$.\\
+We then utilize the following convex combinations:
+    \begin{equation*}
+        \lambda z + (1-\lambda)y = \lambda x_1 + \lambda x_2 + (1-\lambda)y_1 + (1-\lambda)y_2//
+    \end{equation*}
+Since both $S_1$ and $S_2$ are convex we have: 
+    \begin{equation*}
+        \lambda x_i + (1 - \lambda)y_i \in S_i, \text{ } i=1,2//
+    \end{equation*}
+
+
 
 \section{Problem 2.21}
 Identify the extreme points and extreme directions of the following sets:\\
