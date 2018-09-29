@@ -231,5 +231,23 @@ Furthermore, show that if B has full rank, exactly one of the systems has a solu
 
 \subsection{Solution to 2.48}
 In order to solve this problem we will utilize the Gordon Theorem.\\ 
-
+We will prove that System 2 has a solution. \\
+We can rewrite System 1: 
+\begin{equation*}
+    \begin{bmatrix} 
+        A &e 
+    \end{bmatrix} 
+    \begin{bmatrix}
+        x \\
+        s
+    \end{bmatrix}
+    \leq 0\\
+\end{equation*}
+In this system we have:
+    \begin{bmatrix}
+        x \\
+        s
+    \end{bmatrix}
+    \in \mathbb{R}^{n+1}
+\text{We can rewrite $v$ ins System 2 as} $v = v_1 - v_2$, \text{where } $z_1 \geq 0$ \text{ and } $z_2 \geq 0$. \text{ We then replace } [A^t , B^t , -B^t]. \text{Here we have B as a full rank as } $min\{q,n\}$  
 \end{document}
